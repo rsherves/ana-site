@@ -2,9 +2,9 @@ import './index.css';
 
 function PageFooter() {
   return (
-    <div className="PageFooter">
-      <p>This is the page Footer</p>
-    </div>
+    <footer className="PageFooter">
+      <div className="placeholder">Placeholder for contact, legal terms, etc.</div>
+    </footer>
   );
 }
 
