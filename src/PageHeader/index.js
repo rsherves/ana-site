@@ -23,9 +23,9 @@ function Menu() {
 
 function PageHeader() {
   return (
-    <div className="PageHeader">
+    <header className="PageHeader">
       <Menu />
-    </div>
+    </header>
   );
 }
 
