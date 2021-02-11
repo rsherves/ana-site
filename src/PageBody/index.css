@@ -1,4 +1,3 @@
 .PageBody {
-  border: 1px solid brown;
-  margin: 10px;
+  padding-bottom: 2.5rem;    /* Footer height */
 }
