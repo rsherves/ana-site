@@ -2,7 +2,7 @@ import './index.css';
 
 function MenuEntry(props) {
   return (
-    <div className="menu-entry">
+    <div className="menu-entry" onClick={props.onClick}>
       <div className="entry-button">
         {props.value}
       </div>
@@ -11,20 +11,20 @@ function MenuEntry(props) {
   );
 }
 
-function Menu() {
+function Menu(props) {
   return (
     <div className="flex-container">
-      <MenuEntry value="About me" />
-      <MenuEntry value="Research" />
-      <MenuEntry value="Publications" />
+      <MenuEntry onClick={() => props.onClick(0)} value="About me" />
+      <MenuEntry onClick={() => props.onClick(1)} value="Research" />
+      <MenuEntry onClick={() => props.onClick(2)} value="Publications" />
     </div>
   );
 }
 
-function PageHeader() {
+function PageHeader(props) {
   return (
     <header className="PageHeader">
-      <Menu />
+      <Menu onClick={props.onClick} />
     </header>
   );
 }
