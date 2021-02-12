@@ -6,6 +6,10 @@
   color: gray;
 }
 
+.About .flex-container {
+  justify-content: center;
+}
+
 .About .flex-item-img {
   min-width: 200px;
   max-width: 200px;
@@ -13,6 +17,7 @@
 
 .About .flex-item-txt {
   margin-left: 20px;
+  max-width: 700px;
 }
 
 @media (max-width: 800px) {
@@ -37,5 +42,5 @@
 }
 .App .img-credits a {
   font-size: 10px;
-  color: gray;
+  color: lightgrey;
 }
