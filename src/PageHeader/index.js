@@ -6,17 +6,31 @@ function MenuEntry(props) {
       <div className="entry-button">
         {props.value}
       </div>
-      <div className="entry-selection"></div>
+      <div className={"entry-selection " + props.selected}></div>
     </div>
   );
 }
 
 function Menu(props) {
+  const entries = [
+    "About me", "Research", "Publications"
+  ].map((value, index) => {
+    const selected = props.contentSelection === index ? "selected" : "";
+    return (
+      <MenuEntry
+        key={index}
+        value={value}
+        selected={selected}
+        onClick={() => props.onClick(index)}
+      />
+    );
+  });
+
   return (
-    <div className="flex-container row-wrap center">
-      <MenuEntry onClick={() => props.onClick(0)} value="About me" />
-      <MenuEntry onClick={() => props.onClick(1)} value="Research" />
-      <MenuEntry onClick={() => props.onClick(2)} value="Publications" />
+    <div className="Menu">
+      <div className="flex-container row-wrap center">
+        {entries}
+      </div>
     </div>
   );
 }
@@ -24,7 +38,7 @@ function Menu(props) {
 function PageHeader(props) {
   return (
     <header className="PageHeader">
-      <Menu onClick={props.onClick} />
+      <Menu onClick={props.onClick} contentSelection={props.contentSelection} />
     </header>
   );
 }

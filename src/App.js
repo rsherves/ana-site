@@ -21,7 +21,10 @@ class App extends React.Component {
   render() {
     return(
       <div className="App">
-        <PageHeader onClick={(i) => this.handleClick(i)} />
+        <PageHeader
+          onClick={(i) => this.handleClick(i)}
+          contentSelection={this.state.contentSelection}
+        />
         <PageBody contentSelection={this.state.contentSelection} />
         <PageFooter />
       </div>
