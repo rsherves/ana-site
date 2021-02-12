@@ -13,7 +13,7 @@ function MenuEntry(props) {
 
 function Menu(props) {
   return (
-    <div className="flex-container">
+    <div className="flex-container row-wrap center">
       <MenuEntry onClick={() => props.onClick(0)} value="About me" />
       <MenuEntry onClick={() => props.onClick(1)} value="Research" />
       <MenuEntry onClick={() => props.onClick(2)} value="Publications" />
