@@ -14,7 +14,7 @@
   height: 0.2rem;
 }
 
-.PageHeader .menu-entry .entry-selection.selected {
+.PageHeader .menu-entry.selected .entry-selection {
   background-color: whitesmoke;
 }
 
@@ -22,12 +22,19 @@
   margin-left: 10px;
 }
 
-.PageHeader .menu-entry:hover {
+.PageHeader .menu-entry:not(.selected):hover {
   cursor: pointer;
-  color: #e1eff2;
+  color: lightgrey;
+  background-color: #582657;
 }
-.PageHeader .menu-entry:hover .entry-selection {
-  background-color: #e1eff2;
+
+.no-select {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 

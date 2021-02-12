@@ -2,11 +2,11 @@ import './index.css';
 
 function MenuEntry(props) {
   return (
-    <div className="menu-entry" onClick={props.onClick}>
-      <div className="entry-button">
+    <div className={"menu-entry " + props.selected} onClick={props.onClick}>
+      <div className="entry-button no-select">
         {props.value}
       </div>
-      <div className={"entry-selection " + props.selected}></div>
+      <div className="entry-selection"></div>
     </div>
   );
 }
