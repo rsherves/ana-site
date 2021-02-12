@@ -1,0 +1,41 @@
+.About .construction-msg {
+  font-size: 2rem;
+  font-weight: lighter;
+  font-style: italic;
+  padding: 15px 0;
+  color: gray;
+}
+
+.About .flex-item-img {
+  min-width: 200px;
+  max-width: 200px;
+}
+
+.About .flex-item-txt {
+  margin-left: 20px;
+}
+
+@media (max-width: 800px) {
+  .About .flex-container {
+     flex-direction: column;
+     align-items: center;
+  }
+  .About .flex-item-txt {
+    margin-left: 0;
+  }
+  .About .construction-msg {
+    text-align: center;
+  }
+}
+
+.About .sci-illustration {
+  border-radius: 50%;
+  width: 100%;
+}
+.App .img-credits {
+  text-align: center;
+}
+.App .img-credits a {
+  font-size: 10px;
+  color: gray;
+}
