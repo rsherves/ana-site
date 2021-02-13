@@ -1,0 +1,13 @@
+.ConstructionTopMsg {
+  font-size: 2rem;
+  font-weight: lighter;
+  font-style: italic;
+  padding: 15px 0 20px 0;
+  color: gray;
+}
+
+@media (max-width: 800px) {
+  .ConstructionTopMsg {
+    text-align: center;
+  }
+}
