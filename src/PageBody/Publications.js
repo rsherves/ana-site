@@ -33,18 +33,22 @@ class Publications extends React.Component {
     });
     return(
       <div className="Publications">
-        <div className="publications-header">List of articles published</div>
-        <table>
-          <thead>
-            <tr>
-              <th>Title</th>
-              <th>Year</th>
-            </tr>
-          </thead>
-          <tbody>
-            {publications}
-          </tbody>
-        </table>
+        <div className="page-wrapper">
+          <div className="page-header">Scientific articles published:</div>
+          <div className="table-wrapper">
+            <table id="publications-table">
+              <thead>
+                <tr>
+                  <th>Title</th>
+                  <th>Year</th>
+                </tr>
+              </thead>
+              <tbody>
+                {publications}
+              </tbody>
+            </table>
+          </div>
+        </div>
       </div>
     );
   }

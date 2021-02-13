@@ -1,0 +1,57 @@
+.Publications .page-wrapper {
+  margin: 0 auto;
+  max-width: 900px;
+}
+
+.Publications .page-header {
+  font-size: 20px;
+}
+
+.Publications .table-wrapper {
+  margin-top: 15px;
+}
+
+#publications-table {
+  border-collapse: collapse;
+}
+
+#publications-table tr {
+  border-bottom: 1px solid Gainsboro;
+  border-collapse: collapse;
+}
+
+#publications-table th {
+  text-align: left;
+  background-color: #f8f8f8;
+}
+
+#publications-table td {
+  background-color: white;
+}
+
+#publications-table th,
+#publications-table td {
+  padding: 6px 10px;
+  vertical-align: top;
+}
+
+.Publications .pub-title {
+  font-size: 1rem;
+  color: DarkSlateGray;
+  font-weight: bold;
+}
+
+.Publications .pub-authors {
+  font-size: 0.8rem;
+  color: SlateGray;
+}
+
+.Publications .pub-source {
+  font-size: 0.8rem;
+  color: Gray;
+}
+
+.Publications .pub-date {
+  font-size: 1rem;
+  color: DarkSlateGray;
+}
