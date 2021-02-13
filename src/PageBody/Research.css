@@ -1,0 +1,10 @@
+.Research .img-wrapper {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.Research .w-sci-tec-illustration {
+  width: 100%;
+  height: auto;
+  border-radius: 2%;
+}
