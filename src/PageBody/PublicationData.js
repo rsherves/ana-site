@@ -1,8 +1,16 @@
 export default function PublicationData() {
   return {
-    getAllSortedByDate: function() {
-      return getAll().sort((a, b) => a.date.getTime() - b.date.getTime());
-    }
+    getAllSortedByDate: function(options) {
+      const sortAsc = (a, b) => a.date.getTime() - b.date.getTime();
+      const sortDesc = (a, b) => sortAsc(b, a);
+      return getAll().sort(options && options.desc ? sortDesc : sortAsc);
+    },
+
+    getAllSortedByTitle: function(options) {
+      const sortAsc = (a, b) => a.title.localeCompare(b.title);
+      const sortDesc = (a, b) => sortAsc(b, a);
+      return getAll().sort(options && options.desc ? sortDesc : sortAsc);
+    },
   };
 }
 
