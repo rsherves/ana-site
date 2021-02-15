@@ -20,33 +20,23 @@ function PublicationTableRow(props) {
 class Publications extends React.Component {
   constructor(props) {
     super(props);
-    const sortBy = {
+    const currentSort = {
       colName: 'date',
       desc: true,
     };
     this.state = {
-      sortBy: sortBy,
-      publications: PublicationData().getAllSortedByDate({desc: true}),
+      currentSort: currentSort,
+      publications: PublicationData().getAll(currentSort),
     };
   }
 
-  sortBy(options) {
-    if (options.colName === 'title') {
-      this.setState({
-        publications: PublicationData().getAllSortedByTitle({desc: options.desc}),
-        sortBy: options,
-      });
-    } else if (options.colName === 'date') {
-      this.setState({
-        publications: PublicationData().getAllSortedByDate({desc: options.desc}),
-        sortBy: options,
-      });
-    }
-  }
-
   handleSortClick(colName) {
-    const desc = this.state.sortBy.colName === colName && !this.state.sortBy.desc;
-    this.sortBy({colName: colName, desc: desc,});
+    const desc = this.state.currentSort.colName === colName && !this.state.currentSort.desc;
+    const sortOptions = {colName: colName, desc: desc};
+    this.setState({
+      currentSort: sortOptions,
+      publications: PublicationData().getAll(sortOptions),
+    });
   }
 
   render() {
