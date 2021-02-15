@@ -2,14 +2,20 @@ import React from 'react';
 import PublicationData from './PublicationData.js';
 import './Publications.css';
 
+function SortColumnIcon() {
+  return (
+    <span className="sort-by-icon">&#9652;</span>
+  );
+}
+
 function PublicationTableHeadCol(props) {
   return (
     <th>
       <span
-        className="sort-by"
         onClick={() => props.onClick(props.colName)}
+        className="sort-by"
       >
-        {props.displayName}<span className="sort-by-icon">&#9652;</span>
+        {props.displayName}<SortColumnIcon />
       </span>
     </th>
   );
