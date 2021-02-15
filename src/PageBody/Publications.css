@@ -35,6 +35,14 @@
   vertical-align: top;
 }
 
+#publications-table th .sort-by:hover {
+  cursor: pointer;
+}
+
+#publications-table th .sort-by-icon {
+  color: green;
+}
+
 .Publications .pub-title {
   font-size: 1rem;
   color: DarkSlateGray;

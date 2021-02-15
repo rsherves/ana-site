@@ -20,9 +20,33 @@ function PublicationTableRow(props) {
 class Publications extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {
-      publications: PublicationData().getAllSortedByDate(),
+    const sortBy = {
+      colName: 'date',
+      desc: true,
     };
+    this.state = {
+      sortBy: sortBy,
+      publications: PublicationData().getAllSortedByDate({desc: true}),
+    };
+  }
+
+  sortBy(options) {
+    if (options.colName === 'title') {
+      this.setState({
+        publications: PublicationData().getAllSortedByTitle({desc: options.desc}),
+        sortBy: options,
+      });
+    } else if (options.colName === 'date') {
+      this.setState({
+        publications: PublicationData().getAllSortedByDate({desc: options.desc}),
+        sortBy: options,
+      });
+    }
+  }
+
+  handleSortClick(colName) {
+    const desc = this.state.sortBy.colName === colName && !this.state.sortBy.desc;
+    this.sortBy({colName: colName, desc: desc,});
   }
 
   render() {
@@ -39,8 +63,22 @@ class Publications extends React.Component {
             <table id="publications-table">
               <thead>
                 <tr>
-                  <th>Title</th>
-                  <th>Year</th>
+                  <th>
+                    <span
+                      className="sort-by"
+                      onClick={() => this.handleSortClick('title')}
+                    >
+                      Title<span className="sort-by-icon">&#9652;</span>
+                    </span>
+                  </th>
+                <th>
+                  <span
+                    className="sort-by"
+                    onClick={() => this.handleSortClick('date')}
+                  >
+                    Year<span className="sort-by-icon">&#9662;</span>
+                  </span>
+                </th>
                 </tr>
               </thead>
               <tbody>
