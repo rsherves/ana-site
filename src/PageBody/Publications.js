@@ -2,6 +2,19 @@ import React from 'react';
 import PublicationData from './PublicationData.js';
 import './Publications.css';
 
+function PublicationTableHeadCol(props) {
+  return (
+    <th>
+      <span
+        className="sort-by"
+        onClick={() => props.onClick(props.colName)}
+      >
+        {props.displayName}<span className="sort-by-icon">&#9652;</span>
+      </span>
+    </th>
+  );
+}
+
 function PublicationTableRow(props) {
   return (
     <tr>
@@ -40,11 +53,26 @@ class Publications extends React.Component {
   }
 
   render() {
+    const headCols = [
+      {colName: 'title', displayName: 'Title'},
+      {colName: 'date', displayName: 'Year'},
+    ].map((obj, i) => {
+      return (
+        <PublicationTableHeadCol
+          key={i}
+          colName={obj.colName}
+          displayName={obj.displayName}
+          onClick={(colName) => this.handleSortClick(colName)}
+        />
+      );
+    });
+
     const publications = this.state.publications.map((p, i) => {
       return (
         <PublicationTableRow key={i} data={p} />
       );
     });
+
     return(
       <div className="Publications">
         <div className="page-wrapper">
@@ -53,22 +81,7 @@ class Publications extends React.Component {
             <table id="publications-table">
               <thead>
                 <tr>
-                  <th>
-                    <span
-                      className="sort-by"
-                      onClick={() => this.handleSortClick('title')}
-                    >
-                      Title<span className="sort-by-icon">&#9652;</span>
-                    </span>
-                  </th>
-                <th>
-                  <span
-                    className="sort-by"
-                    onClick={() => this.handleSortClick('date')}
-                  >
-                    Year<span className="sort-by-icon">&#9662;</span>
-                  </span>
-                </th>
+                  {headCols}
                 </tr>
               </thead>
               <tbody>
