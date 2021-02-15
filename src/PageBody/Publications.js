@@ -2,20 +2,28 @@ import React from 'react';
 import PublicationData from './PublicationData.js';
 import './Publications.css';
 
-function SortColumnIcon() {
-  return (
-    <span className="sort-by-icon">&#9652;</span>
-  );
+function SortColumnIcon(props) {
+  if (props.isSortedAsc) {
+    return <span className="sort-by-icon">&#9652;</span>;
+  } else if (props.isSortedDesc) {
+    return <span className="sort-by-icon">&#9662;</span>;
+  } else {
+    return null;
+  }
 }
 
 function PublicationTableHeadCol(props) {
   return (
     <th>
       <span
+        className="sort-by no-user-select"
         onClick={() => props.onClick(props.colName)}
-        className="sort-by"
       >
-        {props.displayName}<SortColumnIcon />
+        {props.displayName}
+        <SortColumnIcon
+          isSortedAsc={props.isSortedAsc}
+          isSortedDesc={props.isSortedDesc}
+        />
       </span>
     </th>
   );
@@ -59,16 +67,22 @@ class Publications extends React.Component {
   }
 
   render() {
+    const currentSort = this.state.currentSort;
     const headCols = [
       {colName: 'title', displayName: 'Title'},
       {colName: 'date', displayName: 'Year'},
     ].map((obj, i) => {
+      const isSorted = currentSort.colName === obj.colName;
+      const isSortedAsc = isSorted && !currentSort.desc;
+      const isSortedDesc = isSorted && currentSort.desc;
       return (
         <PublicationTableHeadCol
           key={i}
           colName={obj.colName}
           displayName={obj.displayName}
           onClick={(colName) => this.handleSortClick(colName)}
+          isSortedAsc={isSortedAsc}
+          isSortedDesc={isSortedDesc}
         />
       );
     });
