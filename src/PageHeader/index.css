@@ -25,6 +25,6 @@
 
 .PageHeader .menu-entry:not(.selected):hover {
   cursor: pointer;
-  color: lightgrey;
+  color: LightGray;
   background-color: #582657;
 }
