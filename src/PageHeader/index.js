@@ -13,7 +13,7 @@ function MenuEntry(props) {
 
 function Menu(props) {
   const entries = [
-    "About me", "Research", "Publications"
+    "About me", "Research", "Publications", "Funding"
   ].map((value, index) => {
     const selected = props.contentSelection === index ? "selected" : "";
     return (
