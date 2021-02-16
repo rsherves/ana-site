@@ -38,6 +38,7 @@ function Menu(props) {
 function PageHeader(props) {
   return (
     <header className="PageHeader">
+      <div className="header-name no-user-select">Dr. Ana Sousa Hervés</div>
       <Menu onClick={props.onClick} contentSelection={props.contentSelection} />
     </header>
   );
