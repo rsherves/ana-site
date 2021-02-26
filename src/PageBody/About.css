@@ -2,9 +2,14 @@
   justify-content: center;
 }
 
-.About .flex-item-img {
-  min-width: 200px;
-  max-width: 200px;
+.About .ana-office {
+  width: 100%;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: 0px -20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .About .flex-item-txt {
@@ -20,16 +25,4 @@
   .About .flex-item-txt {
     margin-left: 0;
   }
-}
-
-.About .sci-illustration {
-  border-radius: 50%;
-  width: 100%;
-}
-.App .img-credits {
-  text-align: center;
-}
-.App .img-credits a {
-  font-size: 10px;
-  color: LightGray;
 }

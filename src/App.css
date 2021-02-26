@@ -29,3 +29,11 @@
   -ms-user-select: none;
   user-select: none;
 }
+
+.App .img-credits {
+  text-align: center;
+}
+.App .img-credits a {
+  font-size: 10px;
+  color: LightGray;
+} 

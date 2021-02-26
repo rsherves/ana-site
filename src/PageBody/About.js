@@ -1,5 +1,5 @@
 import './About.css';
-import scientist from '../img/female-scientist-illustration.jpg';
+import anaOffice from '../img/ana-office.jpg';
 
 function About() {
   const imgCreditUrl = "https://www.freepik.com/vectors/female-scientist";
@@ -7,16 +7,7 @@ function About() {
     <div className="About">
       <div className="flex-container">
         <div className="flex-item-img">
-          <img src={scientist} className="sci-illustration" alt="female scientist illustration" />
-          <div className="img-credits">
-            <a
-              target="_blank"
-              rel="noopener noreferrer"
-              href={imgCreditUrl}
-            >
-              Illustration created by pikisuperstar
-            </a>
-          </div>
+          <img src={anaOffice} className="ana-office" alt="Photo in the office" />
         </div>
         <div className="flex-item-txt">
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam interdum porta pellentesque. Praesent porta malesuada orci, in viverra risus sollicitudin vitae.</p>
