@@ -13,8 +13,12 @@
 }
 
 .About .flex-item-txt {
-  margin-left: 20px;
+  margin-left: 30px;
   max-width: 700px;
+}
+
+.About .flex-item-txt p:first-child {
+  margin-top: 0;
 }
 
 @media (max-width: 800px) {
@@ -24,5 +28,8 @@
   }
   .About .flex-item-txt {
     margin-left: 0;
+  }
+  .About .flex-item-txt p:first-child {
+    margin-top: revert;
   }
 }
