@@ -33,3 +33,32 @@
     margin-top: revert;
   }
 }
+
+.About .academic-links-wrapper {
+  margin-top: 50px;
+}
+.About .button-link {
+  margin-right: 15px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5%;
+  background-color: #fff;
+  box-shadow: 0 1px 0 0 rgb(0 0 0 / 15%);
+}
+.About .button-link:hover {
+  cursor: pointer;
+  background-color: #f0f0f0;
+  box-shadow: none;
+}
+.About .button-link.orcid {
+  color: #a1c837
+}
+.About .button-link.research-gate {
+  color: #00c6b5;
+}
+.About .button-link.scorpus {
+  color: #f77e00;
+}
+.About .button-link.google-scholar {
+  color: #767676;
+}
