@@ -1,11 +1,12 @@
-import './About.css';
+import AcademicLink from './util/AcademicLink';
 import anaOffice from '../img/ana-office.jpg';
+import './About.css';
 
 function About() {
   const imgCreditUrl = "https://www.freepik.com/vectors/female-scientist";
   return (
     <div className="About">
-      <div className="flex-container">
+      <div className="flex-container about-container">
         <div className="flex-item-img">
           <img src={anaOffice} className="ana-office" alt="Photo in the office" />
         </div>
@@ -14,12 +15,31 @@ function About() {
           <p>In 2012 I was awarded a Marie Curie Intra-European Fellowship to carry out my postdoctoral research at Freie Universität Berlin, under the supervision of Prof. M. Calderón and Prof. R. Haag. My work in Berlin was focused on the preparation of responsive nanogels and polymer-drug conjugates for applications in drug and gene delivery.</p>
           <p>In 2015 I joined the Glycosystems Laboratory under the supervision of Dr. J. Rojo (IIQ, CSIC, Sevilla), where I worked first as a Talent Hub Fellow (Marie Curie COFUND) and then as a Juan de la Cierva Incorporación Researcher preparing glycodendritic nanostructures for their interaction with biologically relevant lectins.</p>
           <p>Since November 2019 I work as Lecturer in Organic Chemistry (Prof. Ayudante Doctor) at the Faculty of Pharmacy of the University of Castilla-La Mancha. My research interests include the development of light-sensitive nanostructures with applications in biomedicine.</p>
-          <div className="academic-links-wrapper no-user-select">
-            <span className="button-link orcid">ORCID</span>
-            <span className="button-link research-gate">ResearchGate</span>
-            <span className="button-link scorpus">Scopus</span>
-            <span className="button-link google-scholar">Google Scholar</span>
-          </div>
+
+          <div className="academic-links-wrapper">
+            <div className="flex-container row-wrap">
+              <AcademicLink
+                className="orcid"
+                text="ORCID"
+                link="https://orcid.org/0000-0003-0111-9057"
+              />
+              <AcademicLink
+                className="research-gate"
+                text="ResearchGate"
+                link="https://www.researchgate.net/profile/Ana-Sousa-Herves"
+              />
+              <AcademicLink
+                className="scorpus"
+                text="Scopus"
+                link="https://www.scopus.com/authid/detail.uri?authorId=24448692900"
+              />
+              <AcademicLink
+                className="google-scholar"
+                text="Google Scholar"
+                link="https://scholar.google.com/citations?user=unPmtLMAAAAJ&hl=en&oi=ao"
+              />
+            </div>
+          </div>          
         </div>
       </div>
     </div>

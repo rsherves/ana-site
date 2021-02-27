@@ -17,9 +17,6 @@
 .flex-container.row-nowrap {
   flex-flow: row nowrap;
 }
-.flex-container.row-nowrap {
-  flex-flow: row nowrap;
-}
 
 .no-user-select {
   -webkit-touch-callout: none;
