@@ -8,7 +8,9 @@ function AcademicLink(props) {
         target="_blank"
         rel="noopener noreferrer"
       >
-        <span className={props.className}>{props.text}</span>
+        <div className="link-content">
+          <span className={props.className}>{props.text}</span>
+        </div>       
       </a>
     </div>      
   );

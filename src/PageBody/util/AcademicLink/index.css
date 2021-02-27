@@ -1,4 +1,4 @@
-.AcademicLink {
+.AcademicLink .link-content {
   padding: 10px;
   width: max-content;
   border: 1px solid #ccc;
@@ -6,7 +6,7 @@
   background-color: #fff;
   box-shadow: 0 1px 0 0 rgb(0 0 0 / 15%);
 }
-.AcademicLink:hover {
+.AcademicLink .link-content:hover {
   cursor: pointer;
   background-color: #f0f0f0;
   box-shadow: none;
