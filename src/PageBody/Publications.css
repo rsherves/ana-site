@@ -45,8 +45,14 @@
 
 .Publications .pub-title {
   font-size: 1rem;
-  color: DarkSlateGray;
   font-weight: bold;
+}
+.Publications .pub-title a {
+  color: DarkSlateGray;
+  text-decoration: none;
+}
+.Publications .pub-title a:hover {
+  text-decoration: underline;
 }
 
 .Publications .pub-authors {

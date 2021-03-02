@@ -33,7 +33,15 @@ function PublicationTableRow(props) {
   return (
     <tr>
       <td>
-        <div className="pub-title">{props.data.title}</div>
+        <div className="pub-title">
+          <a 
+            href={props.data.link}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {props.data.title}
+          </a>
+        </div>
         <div className="pub-authors">{props.data.authors}</div>
         <div className="pub-source">{props.data.source}</div>
       </td>
