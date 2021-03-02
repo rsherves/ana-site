@@ -1,4 +1,6 @@
 .PageBody {
   padding: 0 30px;
   padding-bottom: 2.5rem;    /* Footer height */
+  text-align:justify;  
+  text-justify:inter-word;
 }
