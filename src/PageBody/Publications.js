@@ -104,7 +104,7 @@ class Publications extends React.Component {
     return(
       <div className="Publications">
         <div className="page-wrapper">
-          <div className="page-header">Scientific articles published:</div>
+          <div className="section-header">Scientific articles published:</div>
           <div className="table-wrapper">
             <table id="publications-table">
               <thead>
@@ -116,6 +116,13 @@ class Publications extends React.Component {
                 {publications}
               </tbody>
             </table>
+          </div>
+          <div className="section-header">Licensed Patents:</div>
+          <div className="patents-wrapper">
+            <ol>
+              <li>A. Sousa-Herves, E. Fernández Megía, R. Riguera Vega. PCT/ES2010/070504. Micelas PIC dendriticas con proteinas bioactivas. España. 07/02/2011. (USC)</li>
+              <li>A. Sousa-Herves, E. Fernández Megía, R. Riguera Vega. PCT/ES2009/070317. pH-sensitive polymeric dendritic micelles. España. 18/02/2010. (USC)</li>            
+            </ol>
           </div>
         </div>
       </div>
