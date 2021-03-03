@@ -1,0 +1,27 @@
+.Funding .flex-container {
+  margin-bottom: 25px;
+}
+
+.Funding .flex-container:last-child {
+  margin-bottom: 50px;
+}
+
+ .Funding .flex-item + .flex-item { 
+  margin-left: 20px;
+}
+
+.Funding .flex-container img {
+  max-height: 100px;
+}
+
+@media (max-width: 450px) {
+  .Funding .flex-container img {
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 350px) {
+  .Funding .flex-container img {
+    max-width: 250px;
+  }
+}
