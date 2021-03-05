@@ -24,6 +24,11 @@ function About() {
                 link="https://orcid.org/0000-0003-0111-9057"
               />
               <AcademicLink
+                className="publons"
+                text="Publons"
+                link="https://publons.com/researcher/2431688/ana-sousa-herves/"
+              />
+              <AcademicLink
                 className="research-gate"
                 text="ResearchGate"
                 link="https://www.researchgate.net/profile/Ana-Sousa-Herves"

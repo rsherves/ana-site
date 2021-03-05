@@ -19,6 +19,9 @@
 .AcademicLink .orcid {
   color: #a1c837
 }
+.AcademicLink .publons {
+  color: #2f5d89
+}
 .AcademicLink .research-gate {
   color: #00c6b5;
 }

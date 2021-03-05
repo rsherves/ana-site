@@ -38,11 +38,22 @@
   margin: 40px 0;
 }
 
-.About .AcademicLink:not(:first-child) {
-  margin-left: 15px;
+.About .AcademicLink {
+  margin-bottom: 10px;
 }
 
-@media (max-width: 550px) {
+.About .AcademicLink:not(:last-child) {
+  margin-right: 15px;
+}
+
+
+@media (max-width: 800px) {
+  .About .academic-links-wrapper .flex-container {
+     justify-content: center;
+  }
+}
+
+@media (max-width: 420px) {
   .About .academic-links-wrapper .flex-container {
     flex-direction: column;
     align-items: center;
