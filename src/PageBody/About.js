@@ -3,12 +3,11 @@ import anaOffice from '../img/ana-office.jpg';
 import './About.css';
 
 function About() {
-  const imgCreditUrl = "https://www.freepik.com/vectors/female-scientist";
   return (
     <div className="About">
       <div className="flex-container about-container">
         <div className="flex-item-img">
-          <img src={anaOffice} className="ana-office" alt="Photo in the office" />
+          <img src={anaOffice} className="ana-office" alt="Ana in the office" />
         </div>
         <div className="flex-item-txt">
           <p>I received my PhD (Extraordinary Doctorate Award) from the University of Santiago de Compostela in 2011 after working on the preparation of dendritic nanostructures for biomedical applications in the group of Prof. R. Riguera and Prof. E. Fernandez-Megia.</p>

@@ -3,14 +3,6 @@
   max-width: 900px;
 }
 
-.Publications .section-header {
-  font-size: 1.25em;
-}
-
-.Publications .section-header:not(:first-child) {
-  margin-top: 40px;
-}
-
 .Publications .table-wrapper {
   margin-top: 15px;
 }

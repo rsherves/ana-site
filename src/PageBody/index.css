@@ -4,3 +4,11 @@
   text-align:justify;  
   text-justify:inter-word;
 }
+
+.PageBody .section-header {
+  font-size: 1.25em;
+}
+
+.PageBody .section-header:not(:first-child) {
+  margin-top: 40px;
+}

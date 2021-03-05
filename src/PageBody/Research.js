@@ -1,26 +1,25 @@
 import './Research.css';
-import illustration from '../img/woman-science-technology.jpg';
+import research01 from '../img/research/research_01.png';
+import research02 from '../img/research/research_02.png';
+import research03 from '../img/research/research_03.png';
 
 function Research() {
-  const imgCreditUrl =
-    "https://ec.europa.eu/research/infocentre/article_en.cfm?&artid=51905&caller=other";
   return (
     <div className="Research">
-      <div className="img-wrapper">
-        <img
-          src={illustration}
-          className="w-sci-tec-illustration"
-          alt="women in science and technology"
-        />
-      </div>
-      <div className="img-credits">
-        <a
-          target="_blank"
-          rel="noopener noreferrer"
-          href={imgCreditUrl}
-        >
-          © Naufal #317011810 source: stock.adobe.com 2020
-        </a>
+      <div className="section-header">Research Interests:</div>
+      <p>
+        My research is focused on the synthesis and characterization of polymeric nanostructures with potential applications in biomedicine.
+      </p>      
+      <div className="gallery-wrapper">
+        <div className="gallery-item-wrapper">
+          <img src={research01} className="gallery-item" alt="Slide one" />
+        </div>
+        <div className="gallery-item-wrapper">
+          <img src={research02} className="gallery-item" alt="Slide two" />
+        </div>
+        <div className="gallery-item-wrapper">
+          <img src={research03} className="gallery-item" alt="Slide three" />
+        </div>
       </div>
     </div>
   );
