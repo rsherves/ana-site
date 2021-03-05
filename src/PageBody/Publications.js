@@ -29,8 +29,18 @@ function PublicationTableHeadCol(props) {
   );
 }
 
-function PublicationTableRow(props) {
+function PublicationAuthors(props) {
+  const re = /(.*)(A\. Sousa-Herves)(.*)/;
+  const matches = props.authors.match(re);
   return (
+    <div>
+      {matches[1]}<strong>{matches[2]}</strong>{matches[3]}
+    </div>    
+  );
+}
+
+function PublicationTableRow(props) {
+    return (
     <tr>
       <td>
         <div className="pub-title">
@@ -42,7 +52,7 @@ function PublicationTableRow(props) {
             {props.data.title}
           </a>
         </div>
-        <div className="pub-authors">{props.data.authors}</div>
+        <div className="pub-authors"><PublicationAuthors authors={props.data.authors} /></div>
         <div className="pub-source">{props.data.source}</div>
       </td>
       <td>
