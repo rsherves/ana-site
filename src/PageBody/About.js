@@ -1,5 +1,9 @@
 import AcademicLink from './util/AcademicLink';
+import ContactLink from './util/ContactLink';
 import anaOffice from '../img/ana-office.jpg';
+import logoTwitter from '../img/contact/twitter_64.png';
+import logoLinked from '../img/contact/linkedin_64.png';
+
 import './About.css';
 
 function About() {
@@ -43,7 +47,29 @@ function About() {
                 link="https://scholar.google.com/citations?user=unPmtLMAAAAJ&hl=en&oi=ao"
               />
             </div>
-          </div>          
+          </div>     
+
+          <div className="contact-wrapper">
+            <div className="contact-label">Contact:</div>
+            <div className="contact-info">
+              TODO <br/>
+              University address <br/>
+              Faculty details <br/>
+              Office coordinates
+            </div>
+            <div className="contact-links-wrapper flex-container row-nowrap">
+              <ContactLink
+                altText="Logo Twitter"
+                imgSource={logoTwitter}
+                link="https://twitter.com/anasousaherves"
+              />
+              <ContactLink
+                altText="Logo LinkedIn"
+                imgSource={logoLinked}
+                link="https://www.linkedin.com/in/ana-sousa-herv%C3%A9s/"
+              />
+            </div>
+          </div>
         </div>
       </div>
     </div>

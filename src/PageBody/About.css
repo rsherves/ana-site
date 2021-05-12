@@ -61,3 +61,17 @@
     margin: 0 0 10px 0;
   }
 }
+
+.About .contact-wrapper {
+  margin-bottom:60px;
+}
+
+.About .contact-links-wrapper {
+  margin-top: 20px;
+}
+
+.About .contact-wrapper .contact-label {
+  color: DarkSlateGray;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
