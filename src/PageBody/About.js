@@ -14,10 +14,14 @@ function About() {
           <img src={anaOffice} className="ana-office" alt="Ana in the office" />
         </div>
         <div className="flex-item-txt">
-          <p>I received my PhD (Extraordinary Doctorate Award) from the University of Santiago de Compostela in 2011 after working on the preparation of dendritic nanostructures for biomedical applications under the supervision of Prof. R. Riguera and Prof. E. Fernandez-Megia (Dpt. of Organic Chemistry and CIQUS).</p>
-          <p>In 2012 I was awarded a Marie Curie Intra-European Fellowship (<em>"SMART NANOGELS"</em>) to carry out my postdoctoral research at Freie Universität Berlin in the groups of Prof. M. Calderón and Prof. R. Haag. My work in Berlin was focused on the preparation of responsive nanogels and polymer-drug conjugates for applications in drug and gene delivery.</p>
-          <p>In 2015 I joined the Glycosystems Laboratory at the Instituto de Investigaciones Químicas (IIQ, CSIC, Seville) to develop my project <em>"GLYCONANO4VIRUS"</em>. I worked in the group of Dr. J. Rojo first as a Talent Hub Fellow (Marie Curie COFUND) and then as a Juan de la Cierva Incorporación Researcher preparing glycodendritic nanostructures for their interaction with biologically relevant lectins implicated in viral infections.</p>
-          <p>Since November 2019 I work as Lecturer in Organic Chemistry (<em>Prof. Ayudante Doctor</em>) at the Faculty of Pharmacy of the University of Castilla-La Mancha. My research interests as a member of the Pharmaceutical Organic Chemistry group include the development of my own research line based on the preparation of light-sensitive nanogels with applications in biomedicine.</p>
+          <p>I received my PhD (Extraordinary Doctorate Award) from the University of Santiago de Compostela in 2011 after working on the preparation of dendritic nanostructures for biomedical applications in the group of Prof. R. Riguera and Prof. E. Fernandez-Megia (Dpt. of Organic Chemistry and CIQUS).
+          </p>
+          <p>In 2012 I was awarded a Marie Curie Intra-European Fellowship (<em>"SMART NANOGELS"</em>) to carry out my postdoctoral research at Freie Universität Berlin in the groups of Prof. M. Calderón and Prof. R. Haag. My work in Berlin was focused on the preparation of responsive nanogels and polymer-drug conjugates for applications in drug and gene delivery.
+          </p>
+          <p>In 2015 I joined the Glycosystems Laboratory, led by Dr. J. Rojo, at the Instituto de Investigaciones Químicas (IIQ, CSIC, Seville) to develop my project <em>"GLYCONANO4VIRUS"</em>. I worked at the group first as a Talent Hub Fellow (Marie Curie COFUND) and then as a Juan de la Cierva Incorporación Researcher preparing glycodendritic structures that could interact with biologically relevant lectins such as those implicated in viral infections.
+          </p>
+          <p>Since November 2019 I work as Lecturer in Organic Chemistry (<em>Prof. Ayudante Doctor</em>) at the Faculty of Pharmacy of the University of Castilla-La Mancha. I belong to the Pharmaceutical Organic Chemistry group, based at The Regional Center for Biomedical Research (CRIB), where I develop a research line devoted to the preparation of light-sensitive nanogels with applications in biomedicine. 
+          </p>
 
           <div className="academic-links-wrapper">
             <div className="flex-container row-wrap">
