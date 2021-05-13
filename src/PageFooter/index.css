@@ -14,3 +14,18 @@
   line-height: 2.5rem;
   text-align: center;
 }
+
+.PageFooter a.rsherves-contact-link {
+  color: gray;
+  text-decoration: none;
+}
+
+.PageFooter a.rsherves-contact-link:hover {
+  color: #606060;
+}
+
+.PageFooter img.linkedin-logo {
+  position: relative;
+  top: 3px;
+  left: 6px;
+}
