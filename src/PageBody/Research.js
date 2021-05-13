@@ -7,9 +7,10 @@ function Research() {
   return (
     <div className="Research">
       <div className="section-header">Research Interests:</div>
-      <p>
-        My research is focused on the synthesis and characterization of polymeric nanostructures with potential applications in biomedicine.
-      </p>      
+      <div className="research-description">
+        <p>My research is focused on the synthesis and characterization of polymeric nanostructures with potential applications in biomedicine. I am author of 2 licensed patents, 3 book chapters and 24 articles in international peer-reviewed journals. My work has been highlighted on the cover of highest impact factor journals of my field (<em>Journal of Controlled Release, Theranostics</em>). My publications cumulate over 800 citations (H-index=15, source Google Scholar).</p>   
+      </div>
+         
       <div className="gallery-wrapper">
         <div className="gallery-item-wrapper">
           <img src={research01} className="gallery-item" alt="Slide one" />

@@ -3,6 +3,10 @@
   margin: 0 auto;
 }
 
+.Research .research-description {
+  max-width: 800px;
+}
+
 .Research .gallery-wrapper {
   margin-bottom: 60px;
 }

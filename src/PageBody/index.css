@@ -7,6 +7,7 @@
 
 .PageBody .section-header {
   font-size: 1.25em;
+  color: DarkSlateGray;
 }
 
 .PageBody .section-header:not(:first-child) {
