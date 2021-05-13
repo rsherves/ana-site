@@ -52,10 +52,9 @@ function About() {
           <div className="contact-wrapper">
             <div className="contact-label">Contact:</div>
             <div className="contact-info">
-              TODO <br/>
-              University address <br/>
-              Faculty details <br/>
-              Office coordinates
+              <p>Dr. Ana Sousa Hervés.</p>
+              <p>Facultad de Farmacia. Universidad de Castilla-La Mancha (UCLM).</p>
+              <p>Tfno: 967 599 200. Ext 2633.</p>
             </div>
             <div className="contact-links-wrapper flex-container row-nowrap">
               <ContactLink

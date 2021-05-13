@@ -74,4 +74,9 @@
   color: DarkSlateGray;
   font-weight: bold;
   font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+.About .contact-wrapper .contact-info p {
+  margin: 3px 0;
 }
