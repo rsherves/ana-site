@@ -2,25 +2,27 @@
   position: absolute;
   bottom: 0;
   width: 100%;
-  height: 2.5rem;
   background-color: #282c34;
   color: gray;
 }
 
-.PageFooter .placeholder {
-  font-size: small;
+.PageFooter .footer-content-wrapper {
+  margin: 10px 10px 12px 10px;
+}
+
+.PageFooter .developer-credits {
+  font-size: 13px;
   font-weight: lighter;
   font-style: italic;
-  line-height: 2.5rem;
   text-align: center;
 }
 
-.PageFooter a.rsherves-contact-link {
+.PageFooter .developer-credits a {
   color: gray;
   text-decoration: none;
 }
 
-.PageFooter a.rsherves-contact-link:hover {
+.PageFooter .developer-credits a:hover {
   color: #606060;
 }
 
@@ -28,4 +30,8 @@
   position: relative;
   top: 3px;
   left: 6px;
+}
+
+.PageFooter .ws-nowrap {  
+  white-space: nowrap;
 }

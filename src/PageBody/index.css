@@ -1,8 +1,20 @@
-.PageBody {
-  padding: 35px 30px;
-  padding-bottom: 2.5rem;    /* Footer height */
+.PageBody {  
   text-align:justify;  
   text-justify:inter-word;
+  padding: 35px 30px;
+  padding-bottom: 41px;    /* Footer height 1x line */
+}
+
+@media (max-width: 436px) {
+  .PageBody {
+    padding-bottom: 57px;  /* Footer height 2x lines */
+  }
+}
+
+@media (max-width: 231px) {
+  .PageBody {
+    padding-bottom: 73px;  /* Footer height 3x lines */
+  }
 }
 
 .PageBody .section-header {
