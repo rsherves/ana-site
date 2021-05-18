@@ -58,7 +58,7 @@ function About() {
             <div className="contact-info">
               <p>Dr. Ana Sousa Hervés.</p>
               <p>Facultad de Farmacia. Universidad de Castilla-La Mancha (UCLM).</p>
-              <p>Tfno: (+34) 967 599 200. Ext 2633.</p>
+              <p>Tel: (+34) 967 599 200. Ext: 2633.</p>
             </div>
             <div className="contact-links-wrapper flex-container row-nowrap">
               <ContactLink
