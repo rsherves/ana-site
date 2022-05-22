@@ -34,11 +34,18 @@ export default function PublicationData() {
 
   function getAll() {
     return [
+			{
+				title: "Inkjet printing of poly (phenylenevinylene)-based fluorophores using an environmentally friendly approach",
+				authors: "A. Sánchez-Ruiz, A. Sousa-Herves, J.C. Pérez-Flores, J.R. Marín-Rueda, ...",
+				source: "Progress in Organic Coatings 166, 106787",
+				date: new Date("2022-5-1"),
+				link: "https://www.sciencedirect.com/science/article/pii/S0300944022000844"
+			},
       {
 				title: "Aggregation-Induced Emission Properties in Fully π-Conjugated Polymers, Dendrimers, and Oligomers",
 				authors: "A. Sánchez-Ruiz, A. Sousa-Herves, J. Tolosa Barrilero, A. Navarro, J. C. Garcia-Martinez",
 				source: "Polymers 13, 213",
-				date: new Date(new Date("2021-01-10")),
+				date: new Date("2021-01-10"),
 			  link: "https://www.mdpi.com/2073-4360/13/2/213",
 			},
 			{
