@@ -20,7 +20,7 @@ function About() {
           </p>
           <p>In 2015 I joined the Glycosystems Laboratory, led by Dr. J. Rojo, at the Instituto de Investigaciones Químicas (IIQ, CSIC, Seville) to develop my project <em>"GLYCONANO4VIRUS"</em>. I worked at the group first as a Talent Hub Fellow (Marie Curie COFUND) and then as a Juan de la Cierva Incorporación Researcher preparing glycodendritic structures that could interact with biologically relevant lectins such as those implicated in viral infections.
           </p>
-          <p>Since November 2019 I work as Lecturer in Organic Chemistry (<em>Prof. Contratado Doctor</em>) at the Faculty of Pharmacy of the University of Castilla-La Mancha. I belong to the Pharmaceutical Organic Chemistry group, based at The Regional Center for Biomedical Research (CRIB), where I develop a research line devoted to the preparation of light-sensitive nanogels with applications in biomedicine. 
+          <p>Since November 2019 I work as Lecturer in Organic Chemistry (<em>Prof. Contratado Doctor</em>) at the Faculty of Pharmacy of the University of Castilla-La Mancha. I am PI of a project devoted to prepare antibacterial surfaces. I belong to the Pharmaceutical Organic Chemistry group, based at The Regional Center for Biomedical Research (CRIB), where I develop a research line devoted to the preparation of light-sensitive nanogels with applications in biomedicine. 
           </p>
 
           <div className="academic-links-wrapper">
